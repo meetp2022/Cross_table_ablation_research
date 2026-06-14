@@ -1,0 +1,8 @@
+torch>=2.0
+torch-geometric>=2.4
+sentence-transformers>=3.0
+datasets>=2.14
+numpy>=1.24
+networkx>=3.0
+loguru>=0.7
+accelerate>=0.26
