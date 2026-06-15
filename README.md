@@ -117,6 +117,15 @@ Results are written under `data/results/`. Metrics are computed at a single
 seed; the graph leg trains in a couple of minutes on CPU, while the text-leg
 fine-tuning benefits from a GPU.
 
+## Trained checkpoints
+
+The scripts train all models from scratch. Training times on a single T4 GPU:
+
+- Text leg fine-tuning (`finetune_bge_mmqa.py`): ~20 min
+- Graph leg training (`train_mmqa_graph.py`, intra or inter): ~2 min on CPU
+
+Pre-trained checkpoints are not included in this repository to keep it lightweight. All results in the paper can be reproduced by running the scripts in order as shown above.
+
 ## Notes
 
 - Inter-table edges are extracted from the gold SQL join conditions and the
